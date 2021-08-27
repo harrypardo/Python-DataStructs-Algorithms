@@ -29,10 +29,10 @@ def split(lista):
 
 
 
-def mergeSort(lista):
-    if(len(lista) <= 1):
-        return lista
-    left_list, right_list = split(lista)
+def mergeSort(number_list):
+    if(len(number_list) <= 1):
+        return number_list
+    left_list, right_list = split(number_list)
     left = mergeSort(left_list)
     right = mergeSort(right_list)
     return merge(left, right)
